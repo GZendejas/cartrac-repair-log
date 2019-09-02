@@ -1,0 +1,46 @@
+
+data {
+    users; {
+        userid: {
+            repairs: {
+                repairId: {
+                    description: string,
+                    repairedOn: num,
+                    mileage: num,
+                    details: string,
+                    cost: num
+                    proOrHome: select from strings,
+
+                    
+                    ------- if done by pro (below activated) -------
+
+                    shopName: string,
+                    shopStreetAddress: string,
+                    shopCity: string,
+                    shopState: string or select,
+                    shopZip: num,
+                    shopPhone: num
+
+
+
+                }
+            }
+        }
+    }
+}
+
+
+new components
+
+< Dashboard />
+
+    will contain:
+    < DashboardHeader />
+        will contain:
+            button linking to "/create" route to where <AddRepairPage /> will live
+    < RepairList Filters />    will be class component so mapDispatchToProps functions can be defined as methods
+    < RepairList />
+    
+        will contain:
+            <RepairListItem />
+                will contain link to where <EditRepairPage /> will live

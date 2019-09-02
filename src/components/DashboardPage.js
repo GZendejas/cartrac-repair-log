@@ -1,9 +1,16 @@
 import React from 'react';
+import { DashboardHeader } from './DashboardHeader';
+import { RepairListFilters } from './RepairListFilters';
+import { RepairList } from './RepairList';
+
 
 
 const DashboardPage = () => (
     <div>
-        Dashboard page content
+        DashboardPage (placeholder)
+        <DashboardHeader />
+        <RepairListFilters />
+        <RepairList />
     </div>
 );
 
