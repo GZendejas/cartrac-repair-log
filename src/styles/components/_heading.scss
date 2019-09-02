@@ -1,0 +1,35 @@
+
+
+.heading__container {
+    
+    border-radius: 3px;
+    flex-basis: 50%;
+    padding: $l-size $m-size;
+    text-align: center;
+    width: 80%;
+}
+
+.heading__main-title {
+    color: $orange-color;
+    // display: block;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+}
+
+.heading__main-span {
+    color: $off-white;
+}
+
+.heading__sub-title {
+    color: $off-white;
+    // display: block;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    // padding-left: 2rem;
+    // padding-right: 2rem;
+    text-transform: uppercase;
+}
+

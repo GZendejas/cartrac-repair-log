@@ -10,10 +10,21 @@
 }
 
 .header__title {
-    color: white;
+    color: $orange-color;
+    font-family: 'Racing Sans One', sans-serif;
+    letter-spacing: .2rem;
     text-decoration: none;
     h1 {
         margin: 0;
     }
+}
+
+.header__title-span {
+    color: $off-white;
+}
+
+.header__logout {
+    font-weight: 800;
+    letter-spacing: .15rem;
 }
 
