@@ -10,6 +10,8 @@ export default (state = repairsReducerDefaultState, action) => {
                 ...state,
                 action.repair
             ];
+        case 'SET_REPAIRS':
+            return action.repairs;
         default:
             return state;
     }

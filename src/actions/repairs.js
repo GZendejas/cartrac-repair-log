@@ -28,3 +28,30 @@ export const startAddRepair = (repairData = {}) => {
         });
     };
 };
+
+
+// SET_EXPENSES
+
+export const setRepairs = (repairs) => ({
+    type: 'SET_REPAIRS',
+    repairs
+});
+
+export const startSetRepairs = () => {
+    return (dispatch, getState) => {
+        const uid = getState().auth.uid;
+        return database.ref(`users/${uid}/repairs`).once('value').then((snapshot) => {
+            const repairs = [];
+
+            snapshot.forEach((childSnapshot) => {
+                repairs.push({
+                    id: childSnapshot.key,
+                    ...childSnapshot.val()
+                });
+            });
+
+            dispatch(setRepairs(repairs));
+        });
+    };
+};
+
