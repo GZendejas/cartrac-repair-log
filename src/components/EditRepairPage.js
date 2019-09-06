@@ -27,6 +27,7 @@ export class EditRepairPage extends React.Component {
                     <RepairForm
                         repair={this.props.repair}
                         onSubmit={this.onSubmit}
+                        buttonMessage="Save Changes"
                     />
                     <button className="button button--secondary" onClick={this.onRemove}>Remove Repair</button>
                 </div>

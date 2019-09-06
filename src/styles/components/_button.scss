@@ -42,7 +42,26 @@
 }
 
 
-// for Google login button
+// link on AdRepairPage
+
+.link-to-dashboard,
+.link-to-dashboard:link,
+.link-to-dashboard:visited,
+.link-to-dashboard:active {
+    color: $med-grey;
+    font-weight: 800;
+    letter-spacing: .3rem;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+
+    p {
+        margin-top: $l-size;
+    }
+}
+
+
+// colors for Google login button
 
 .Google-G {
     color: $g-blue;

@@ -95,7 +95,7 @@ export default class RepairForm extends React.Component {
                     onChange={this.onDetailsChange}
                 />
                 <div>
-                    <button className="button">Save Repair</button>
+                    <button className="button">{this.props.buttonMessage ? this.props.buttonMessage : "Add Repair"}</button>
                 </div>
                
             </form>
