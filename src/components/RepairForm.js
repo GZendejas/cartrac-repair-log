@@ -9,7 +9,7 @@ export default class RepairForm extends React.Component {
 
         this.state = {
             description: props.repair ? props.repair.description : '',
-            repairedOn: props.repair ? props.repair.repairedOn : moment(),
+            repairedOn: props.repair ? moment(props.repair.repairedOn) : moment(),
             mileage: props.repair ? props.repair.mileage.toString() : '',
             details: props.repair ? props.repair.details : '',
             calendarFocused: false,

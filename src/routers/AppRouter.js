@@ -3,7 +3,7 @@ import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import DashboardPage from '../components/DashboardPage';
 import AddRepairPage from '../components/AddRepairPage';
-import { EditRepairPage } from '../components/EditRepairPage';
+import EditRepairPage from '../components/EditRepairPage';
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';

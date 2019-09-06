@@ -30,7 +30,7 @@ export const startAddRepair = (repairData = {}) => {
 };
 
 
-// SET_EXPENSES
+// SET_REPAIRS
 
 export const setRepairs = (repairs) => ({
     type: 'SET_REPAIRS',
@@ -55,3 +55,36 @@ export const startSetRepairs = () => {
     };
 };
 
+
+// EDIT_EREPAIR
+
+export const editRepair = (id, updates) => ({
+    type: 'EDIT_REPAIR',
+    id,
+    updates
+});
+
+export const startEditRepair = (id, updates) => {
+    return (dispatch, getState) => {
+        const uid = getState().auth.uid;
+        return database.ref(`users/${uid}/repairs/${id}`).update(updates).then(() => {
+            dispatch(editRepair(id, updates));
+        });
+    };
+};
+
+// REMOVE_REPAIR
+
+export const removeRepair = ({ id } = {}) => ({
+    type: 'REMOVE_REPAIR',
+    id
+});
+
+export const startRemoveRepair = ({ id } = {}) => {
+    return (dispatch, getState) => {
+        const uid = getState().auth.uid;
+        return database.ref(`users/${uid}/repairs/${id}`).remove().then(() => {
+            dispatch(removeRepair({ id }));
+        });
+    };
+};
