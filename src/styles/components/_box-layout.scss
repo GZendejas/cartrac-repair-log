@@ -17,6 +17,7 @@
 .box-layout__box {
     background: fade-out($med-grey, .15);
     border-radius: 3px;
+    border-radius: 2rem;
     color: $off-white;
     padding: $l-size $m-size;
     text-align: center;

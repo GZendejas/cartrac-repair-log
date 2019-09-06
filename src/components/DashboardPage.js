@@ -7,7 +7,6 @@ import RepairList from './RepairList';
 
 const DashboardPage = () => (
     <div>
-        DashboardPage (placeholder)
         <DashboardHeader />
         <RepairListFilters />
         <RepairList />

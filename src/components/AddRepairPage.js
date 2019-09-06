@@ -16,11 +16,18 @@ export class AddRepairPage extends React.Component {
     render() {
         return (
             <div>
-                AddRepairPage (placeholder)
-                <RepairForm
-                    onSubmit={this.onSubmit}
-                />
+                <div className="page-header">
+                    <div className="content-container">
+                        <h1 className="page-header__title">ADD REPAIR</h1>
+                    </div>
+                </div>
+                <div className="content-container">
+                    <RepairForm
+                        onSubmit={this.onSubmit}
+                    />
+                </div>
             </div>
+            
         );
     };
 }

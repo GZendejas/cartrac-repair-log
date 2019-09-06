@@ -1,15 +1,35 @@
 .button {
     background: $blue;
     border: none;
-    border-radius: 1rem;
+    // border: 3px $orange-color solid;
+    border-radius: 1.3rem;
     color: white;
     display: inline-block;
     font-size: $font-size-large;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: .1rem;
     line-height: 1;
     padding: $s-size;
     text-decoration: none;
+}
+
+.button--login, .button--logout {
+    background: $blue;
+    background: black;
+    border: none;
+    border-radius: 1.3rem;
+    color: white;
+    display: inline-block;
+    font-size: $font-size-large;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    line-height: 1;
+    padding: $s-size;
+    text-decoration: none;
+
+    span {
+        font-weight: 400;
+    }
 }
 
 .button--link {
@@ -18,4 +38,32 @@
 
 .button--secondary {
     background: #888;
+    background: $dark-grey;
+}
+
+
+// for Google login button
+
+.Google-G {
+    color: $g-blue;
+}
+
+.Google-or {
+    color: $g-red;
+}
+
+.Google-oy {
+    color: $g-yellow;
+}
+
+.Google-g {
+    color: $g-blue;
+}
+
+.Google-l {
+    color: $g-green;
+}
+
+.Google-e {
+    color: $g-red;
 }

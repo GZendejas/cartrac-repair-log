@@ -63,10 +63,10 @@ export default class RepairForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.onSubmit}>
-                RepairForm (placeholder)
-                {this.state.error && <p>{this.state.error}</p>}
+            <form className="form" onSubmit={this.onSubmit}>
+                {this.state.error && <p className="form__error">{this.state.error}</p>}
                 <input
+                    className="text-input"
                     type="text"
                     placeholder="Description"
                     autoFocus
@@ -82,18 +82,20 @@ export default class RepairForm extends React.Component {
                     isOutsideRange={() => false}
                 />
                 <input
+                    className="text-input"
                     type="text"
                     placeholder="Mileage"
                     value={this.state.mileage}
                     onChange={this.onMileageChange}
                 />
                 <textarea
+                    className="textarea"
                     placeholder="Add details about repair/maintenance"
                     value={this.state.details}
                     onChange={this.onDetailsChange}
                 />
                 <div>
-                    <button>Save Repair</button>
+                    <button className="button">Save Repair</button>
                 </div>
                
             </form>
