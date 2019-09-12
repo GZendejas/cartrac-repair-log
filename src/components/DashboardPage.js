@@ -1,6 +1,6 @@
 import React from 'react';
 import { DashboardHeader } from './DashboardHeader';
-import { RepairListFilters } from './RepairListFilters';
+import RepairListFilters from './RepairListFilters';
 import RepairList from './RepairList';
 
 

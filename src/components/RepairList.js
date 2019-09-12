@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import RepairListItem from './RepairListItem';
+import selectRepairs from '../selectors/repairs';
 
 
 
@@ -33,7 +34,7 @@ export const RepairList = (props) => (
 
 const mapStateToProps = (state) => {
     return {
-        repairs: state.repairs
+        repairs: selectRepairs(state.repairs, state.filters)
     }
 }
 
